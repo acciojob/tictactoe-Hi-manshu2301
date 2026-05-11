@@ -42,10 +42,10 @@ cells.forEach((cell,index)=>{
 		}
 		if(currentPlayer ==="x"){
 			currentPlayer ="o";
-			message.textContent = `${player2} you're up`;
+			message.textContent = `${player2}, you're up`;
 		}else{
 			currentPlayer="x";
-			message.textContent = `${player1} you're up`;
+			message.textContent = `${player1}, you're up`;
 		}
 		
 	});
