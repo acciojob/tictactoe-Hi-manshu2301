@@ -17,8 +17,8 @@ const submitBtn= document.getElementById("submit");
 const message = document.querySelector(".message");
 const cells = document.querySelectorAll(".cell");
 submitBtn.addEventListener("click",function() {
-	player1 = document.getElementById("player-1").value;
-	player2 = document.getElementById("player-2").value;
+	player1 = document.getElementById("player1").value;
+	player2 = document.getElementById("player2").value;
 
 	document.getElementById("game").style.display="block";
 	message.textContent = `${player1}, you're up`;
@@ -37,7 +37,7 @@ cells.forEach((cell,index)=>{
 		}
 		if(checkWinner()){
 			let winnerName = currentPlayer ==='x'? player1 : player2;
-			message.textContent = `${winnerName} congratulation you won!`;
+			message.textContent = `${winnerName} congratulations you won!`;
 			return;
 		}
 		if(currentPlayer ==="x"){
