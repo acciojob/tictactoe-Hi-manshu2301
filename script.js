@@ -28,7 +28,7 @@ cells.forEach((cell,index)=>{
 		if(board[index] !== ""){
 			return;
 		}
-		if(currentPlayer="x"){
+		if(currentPlayer==="x"){
 			cell.textContent = "x";
 			board[index]="x";
 		}else{
@@ -36,7 +36,7 @@ cells.forEach((cell,index)=>{
 			board[index]="o";
 		}
 		if(checkWinner()){
-			let winnerName = currentPlayer ==='x' player1 : player2;
+			let winnerName = currentPlayer ==='x'? player1 : player2;
 			message.textContent = `${winnerName} congratulation you won!`;
 			return;
 		}
